@@ -1,0 +1,23 @@
+<html>
+  <head>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.6/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4Q6Gf2aSP4eDXB8Miphtr37CMZZQ5oXLH2yaXMJ2w8e2ZtHTl7GptT4jmndRuHDT" crossorigin="anonymous">
+  </head>
+  <body>
+    <div class="container">
+      <h1>Stupid Coaching</h1>
+        <div class="card">
+          <div class="card-body">
+            <p><em><%= @question %></em></p>
+            <p>- You</p>
+          </div>
+        </div>
+        <div class="card my-4">
+          <div class="card-body text-bg-warning">
+            <p><em><%= @answer %></em></p>
+            <p>- Coach</p>
+           </div>
+        </div>
+      <%= link_to "Ask another question", ask_path %>
+    </div>
+  </body>
+</html>
